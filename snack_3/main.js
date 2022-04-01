@@ -8,8 +8,8 @@ let lista_falsa = []
 const numero_lista_falsa = parseInt(prompt('Quanti invitati deve avere la lista?'))
 
 for (let i = 0; i < numero_lista_falsa; i++){
-    let a = Math.floor(Math.random() * 4)
-    let b = Math.floor(Math.random() * 4)
+    let a = Math.floor(Math.random() * nomi.length)
+    let b = Math.floor(Math.random() * cognomi.length)
     let element_lista_falsa = nomi[a] + cognomi[b]
     lista_falsa[i] = element_lista_falsa
 }
